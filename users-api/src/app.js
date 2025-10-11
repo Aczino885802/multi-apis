@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 4001;
 // Health DB
 app.get("/db/health", async (_req, res) => {
   try {
-    const r = await pool.query("SELECT 1 AS ok..");
+    const r = await pool.query("SELECT 1 AS ok...");
     res.json({ ok: r.rows[0].ok === 1 });
   } catch (e) {
     res.status(500).json({ ok: false, error: String(e) });
