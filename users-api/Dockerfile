@@ -7,6 +7,6 @@ RUN npm ci --omit=dev
 
 COPY src ./src
 
-EXPOSE 4001
-ENV PORT=4001 SERVICE_NAME=users-api
+EXPOSE 8080
+ENV PORT=8080 SERVICE_NAME=users-api
 CMD ["node", "src/app.js"]
