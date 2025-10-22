@@ -1,0 +1,14 @@
+# Environment Variables
+.env
+*.env
+
+# Node
+node_modules/
+npm-debug.log
+
+# Logs
+logs
+*.log
+
+# Docker
+*.pid
