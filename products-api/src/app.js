@@ -122,6 +122,7 @@ connectMongo().catch((err) => {
   console.error("Mongo init error:", err);
 });
 
+
 // Health - servicio
 app.get("/health", (_req, res) => {
   res.json({ status: "ok", service: "products-api", driver: "mongoose" });
